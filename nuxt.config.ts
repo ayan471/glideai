@@ -40,6 +40,10 @@ export default defineNuxtConfig({
     clientConfig: {
       routes: [
         {
+          type: "case_study",
+          path: "/case-study/:uid",
+        },
+        {
           type: "page",
           path: "/:uid",
         },
