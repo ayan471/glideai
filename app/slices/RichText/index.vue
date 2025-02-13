@@ -14,22 +14,11 @@ defineProps(
 </script>
 
 <template>
-  <section>
+  <Bounded>
     <PrismicRichText
+      class="prose prose-lg prose-slate prose-invert w-full"
       :field="slice.primary.content"
-      class="richtext"
-      wrapper="section"
+      wrapper="div"
     />
-  </section>
+  </Bounded>
 </template>
-
-<style scoped>
-section:deep(.richtext) {
-  max-width: 600px;
-  margin: 6em auto;
-}
-
-section:deep(.richtext .codespan) {
-  font-family: monospace;
-}
-</style>
