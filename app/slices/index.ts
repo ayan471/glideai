@@ -7,6 +7,7 @@ export const components = defineSliceZoneComponents({
   bento: defineAsyncComponent(() => import("./Bento/index.vue")),
   case_studies: defineAsyncComponent(() => import("./CaseStudies/index.vue")),
   hero: defineAsyncComponent(() => import("./Hero/index.vue")),
+  integrations: defineAsyncComponent(() => import("./Integrations/index.vue")),
   rich_text: defineAsyncComponent(() => import("./RichText/index.vue")),
   showcase: defineAsyncComponent(() => import("./Showcase/index.vue")),
 });
